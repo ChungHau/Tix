@@ -5,7 +5,7 @@ import { Fragment } from 'react';
 
 export default function Header() {
   return (
-    <header className=''>
+    <header className='bg-slate-900 fixed w-full top-0 left-0 right-0 z-50 '>
       <Popover className='relative'>
         <div className='max-w-8xl mx-auto px-4 sm:px-6'>
           <div className='flex justify-between items-center py-6 md:justify-start md:space-x-10'>
@@ -72,7 +72,7 @@ export default function Header() {
           leaveTo='opacity-0 scale-95'>
           <Popover.Panel
             focus
-            className='absolute top-0 inset-x-0 p-2 transition transform origin-top-right md:hidden'>
+            className='absolute top-0 inset-x-0 p-2 z-50 transition transform origin-top-right md:hidden'>
             <div className='rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 bg-gray-800 divide-y-2 divide-gray-50'>
               <div className='pt-5 pb-6 px-5'>
                 <div className='flex items-center justify-between'>

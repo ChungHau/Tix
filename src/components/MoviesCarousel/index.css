@@ -1,0 +1,21 @@
+.moviesCarousel .slick-dots {
+  bottom: 12%;
+}
+
+.moviesCarousel .slick-dots li {
+  border-radius: 50%;
+}
+.moviesCarousel .slick-dots li button {
+  height: 12px;
+  width: 12px;
+  border-radius: 50%;
+  background: #ccc;
+}
+
+.moviesCarousel .slick-dots li.slick-active button {
+  background-color: rgb(67 56 202);
+}
+
+.moviesCarousel .slick-dots li button::before {
+  color: transparent;
+}
