@@ -1,0 +1,12 @@
+.playBtn__overplay {
+  transition: opacity 0.5s;
+  z-index: 2;
+}
+
+.carousel__item .absolute.playBtn__overplay:hover {
+  opacity: 0.4;
+}
+
+.carousel__item:hover .playBtn__overplay {
+  opacity: 0.8;
+}
