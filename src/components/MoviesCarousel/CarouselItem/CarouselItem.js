@@ -7,8 +7,17 @@ const CarouselItem = (props) => {
   return (
     <>
       <div className='carousel__item relative'>
-        <div className='carousel__img'>
+        <div className='carousel__img hidden md:block'>
           <img src={props.imageSrc} alt='' width='100%' />
+        </div>
+        <div className='carousel__img block md:hidden'>
+          <a
+            href='https://www.youtube.com/watch?v=mVsJXiI60a0'
+            target='_blank'
+            without
+            rel='noreferrer'>
+            <img src={props.imageSrc} alt='' width='100%' />
+          </a>
         </div>
         <div className='playBtn__overplay hidden md:block absolute top-2/4 left-2/4 -translate-x-2/4 -translate-y-2/4 opacity-0 '>
           <button onClick={() => setShow(true)}>
@@ -18,7 +27,7 @@ const CarouselItem = (props) => {
       </div>
       <Modal show={show} onClose={() => setShow(false)}>
         <iframe
-          width={560}
+          className='w-full '
           height={315}
           src='https://www.youtube.com/embed/mVsJXiI60a0'
           title='YouTube video player'

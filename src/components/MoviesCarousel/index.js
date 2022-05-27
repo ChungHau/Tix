@@ -38,7 +38,7 @@ const MoviesCarousel = () => {
   const numberImagesArr = [1, 2, 3, 4];
 
   return (
-    <div className='moviesCarousel mt-24'>
+    <div className='moviesCarousel mt-24 mb-6'>
       <Slider {...settings}>
         {numberImagesArr.map((num) => (
           <CarouselItem

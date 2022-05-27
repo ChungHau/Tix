@@ -1,0 +1,34 @@
+.movieSearch__group select {
+  appearance: none;
+}
+.movieSearch__group select:focus {
+  outline: none;
+}
+
+.movieSearch__group {
+  position: relative;
+}
+
+.movieSearch__group:not(.movieSearch__button):after,
+.movieSearch__group:not(.movieSearch__button):before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.movieSearch__group:not(.movieSearch__button):after {
+  width: 2px;
+  height: 50%;
+  background-color: #a6a7aa;
+  right: 0;
+}
+
+.movieSearch__group:not(.movieSearch__button):before {
+  right: 10px;
+  background: url('https://kdq-react-movie-app.surge.sh/images/dropdown-icon.png')
+    50% / contain no-repeat;
+  width: 15px;
+  height: 15px;
+  cursor: pointer;
+  pointer-events: none;
+}
