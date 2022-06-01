@@ -49,6 +49,13 @@ const settings = {
         slidesToScroll: 3,
       },
     },
+    {
+      breakpoint: 768,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 2,
+      },
+    },
   ],
 };
 

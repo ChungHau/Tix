@@ -21,6 +21,7 @@ const MoviesTab = () => {
 
   const newMoviesList = [...moviesList];
   newMoviesList.reverse();
+
   return (
     <section className='moviesTab container my-0 mx-auto text-center w-full max-w-[940px]'>
       <div className='tabs text-slate-50 flex my-0 mx-auto w-2/4 text-2xl '>
