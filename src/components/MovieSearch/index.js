@@ -1,5 +1,5 @@
 import React from 'react';
-import './MovieSearch.css';
+import './index.css';
 
 const MovieSearch = () => {
   return (
@@ -7,7 +7,7 @@ const MovieSearch = () => {
       <form className='movieSearch__form flex items-center h-full text-sm'>
         <div className='movieSearch__group flex-1 h-full '>
           <select className='p-5 bg-slate-100 h-full w-full cursor-pointer'>
-            <option disabled selected hidden>
+            <option disabled hidden value=''>
               dsadsadas
             </option>
             <option>dsadsadas</option>
@@ -18,7 +18,9 @@ const MovieSearch = () => {
 
         <div className='movieSearch__group flex-1 h-full '>
           <select className='p-5 bg-slate-100 h-full w-full cursor-pointer'>
-            <option>dsadsadas</option>
+            <option disabled hidden value=''>
+              dsadsadas
+            </option>
             <option>dsadsadas</option>
             <option>dsadsadas</option>
             <option>dsadsadas</option>
@@ -27,7 +29,9 @@ const MovieSearch = () => {
 
         <div className='movieSearch__group flex-1 h-full '>
           <select className='p-5 bg-slate-100 h-full w-full cursor-pointer'>
-            <option>dsadsadas</option>
+            <option disabled hidden value=''>
+              dsadsadas
+            </option>
             <option>dsadsadas</option>
             <option>dsadsadas</option>
             <option>dsadsadas</option>
@@ -36,7 +40,9 @@ const MovieSearch = () => {
 
         <div className='movieSearch__group flex-1 h-full '>
           <select className='p-5 bg-slate-100 h-full w-full cursor-pointer :after:content-none'>
-            <option>dsadsadas</option>
+            <option disabled hidden value=''>
+              dsadsadas
+            </option>
             <option>dsadsadas</option>
             <option>dsadsadas</option>
             <option>dsadsadas</option>

@@ -1,54 +1,32 @@
+import React from 'react';
 import Slider from 'react-slick';
-import '../../../node_modules/slick-carousel/slick/slick.css';
-import '../../../node_modules/slick-carousel/slick/slick-theme.css';
+import 'slick-carousel/slick/slick-theme.css';
+import 'slick-carousel/slick/slick.css';
 import CarouselItem from './CarouselItem/CarouselItem';
 import './index.css';
-
-function importAll(r) {
-  let images = {};
-  r.keys().forEach((item, index) => {
-    images[item.replace('./', '')] = r(item);
-  });
-  return images;
-}
-const images = importAll(
-  require.context('../../assets/images/', false, /.(png)$/)
-);
-
-const carouselImg = Object.keys(images)
-  .filter((key) => key.includes('imageCarousel'))
-  .reduce((obj, key) => {
-    return Object.assign(obj, {
-      [key]: images[key],
-    });
-  }, {});
-
-console.log(carouselImg);
+import { imagesCarousel } from '../../assets/images/imagesCarousel';
 
 const MoviesCarousel = () => {
   const settings = {
     dots: true,
     infinite: true,
     arrows: false,
+    centerPadding: '60px',
+
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
   };
 
-  const numberImagesArr = [1, 2, 3, 4];
-
   return (
-    <div className='moviesCarousel mt-24 mb-6'>
+    <section className='moviesCarousel mb-6'>
       <Slider {...settings}>
-        {numberImagesArr.map((num) => (
-          <CarouselItem
-            key={Math.random()}
-            imageSrc={carouselImg[`imageCarousel${num}.png`]}
-          />
+        {imagesCarousel.map((image, i) => (
+          <CarouselItem key={image + i} imageSrc={image} />
         ))}
       </Slider>
-    </div>
+    </section>
   );
 };
 
-export default MoviesCarousel;
+export default React.memo(MoviesCarousel);

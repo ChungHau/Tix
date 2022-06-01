@@ -5,10 +5,10 @@ import { Fragment } from 'react';
 
 export default function Header() {
   return (
-    <header className='bg-slate-900 fixed w-full top-0 left-0 right-0 z-50 '>
+    <header className='bg-slate-700 opacity-95  fixed w-full top-0 left-0 right-0 z-50 '>
       <Popover className='relative'>
         <div className='max-w-8xl mx-auto px-4 sm:px-6'>
-          <div className='flex justify-between items-center py-6 md:justify-start md:space-x-10'>
+          <div className='flex justify-between items-center py-4 md:justify-start md:space-x-10'>
             <div className='flex justify-start md:w-0 md:flex-1'>
               <a href='#'>
                 <img

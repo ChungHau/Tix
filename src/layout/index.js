@@ -6,7 +6,7 @@ const Layout = (props) => {
   return (
     <>
       <Header />
-      <main>{props.children}</main>
+      <main className='mt-[4.5rem]'>{props.children}</main>
       <Footer />
     </>
   );

@@ -3,10 +3,10 @@
   z-index: 2;
 }
 
-.carousel__item .absolute.playBtn__overplay:hover {
+.carouselItem .absolute.playBtn__overplay:hover {
   opacity: 0.4;
 }
 
-.carousel__item:hover .playBtn__overplay {
+.carouselItem:hover .playBtn__overplay {
   opacity: 0.8;
 }

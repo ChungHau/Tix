@@ -1,6 +1,7 @@
 import './App.css';
 import MoviesCarousel from './components/MoviesCarousel';
-import MovieSearch from './components/MovieSearch/MovieSearch';
+import MovieSearch from './components/MovieSearch/';
+import MoviesTab from './components/MoviesTab';
 import Layout from './layout';
 
 function App() {
@@ -8,6 +9,7 @@ function App() {
     <Layout>
       <MoviesCarousel />
       <MovieSearch />
+      <MoviesTab />
     </Layout>
   );
 }

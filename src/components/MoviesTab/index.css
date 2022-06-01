@@ -1,0 +1,47 @@
+.moviesTab .tabs .tab-item.active h1 {
+  color: rgb(99 102 241);
+}
+
+.playBtn__overplay {
+  transition: opacity 0.5s;
+  z-index: 3;
+}
+
+.moviesTab .moviesItem .moviesItem__container:hover .playBtn__overplay {
+  opacity: 1;
+}
+.moviesTab .moviesItem .absolute.playBtn__overplay:hover {
+  opacity: 0.4;
+}
+
+.moviesTab .moviesItem .moviesItem__container:hover .imgOverplay {
+  z-index: 2;
+  background: linear-gradient(transparent, black);
+}
+
+.moviesTab .moviesItem__btn {
+  display: none;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.5s, visibility 0s;
+}
+
+.moviesTab .moviesItem .moviesItem__container:hover .moviesItem__text {
+  display: none;
+}
+
+.moviesTab .moviesItem .moviesItem__container:hover .moviesItem__btn {
+  display: block;
+  visibility: visible;
+  opacity: 1;
+}
+
+.slick-track {
+  display: flex;
+}
+
+/* @media (max-width: 1050px) {
+  .moviesTab .slick-arrow {
+    display: none !important;
+  }
+} */

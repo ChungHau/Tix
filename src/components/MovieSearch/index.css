@@ -25,8 +25,8 @@
 
 .movieSearch__group:not(.movieSearch__button):before {
   right: 10px;
-  background: url('https://kdq-react-movie-app.surge.sh/images/dropdown-icon.png')
-    50% / contain no-repeat;
+  background: url('../../../public/images/dropdown-icon.png') 50% / contain
+    no-repeat;
   width: 15px;
   height: 15px;
   cursor: pointer;
