@@ -40,6 +40,13 @@
   display: flex;
 }
 
+.moviesItem__footer {
+  font-size: 1.13rem;
+}
+
+.moviesItem__text p {
+  line-height: 20px;
+}
 /* @media (max-width: 1050px) {
   .moviesTab .slick-arrow {
     display: none !important;

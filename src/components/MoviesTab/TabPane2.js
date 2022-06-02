@@ -97,15 +97,13 @@ export default class TabPane2 extends Component {
                       <div className='imgOverplay w-full h-full absolute top-0 left-0'></div>
                     </div>
                     <div className='moviesItem__footer mt-4 bg-slate-900 h-10 hidden md:block'>
-                      <div className='moviesItem__text flex'>
-                        <p className='text-white px-1 bg-indigo-700 rounded'>
+                      <div className='moviesItem__text text-white w-full h-full flex'>
+                        <p className='mr-2 px-2 bg-indigo-700 rounded max-h-5'>
                           C13
                         </p>
-                        <p className='text-white font-bold ml-4 flex-1'>
-                          {movie.tenPhim}
-                        </p>
+                        <p>{movie.tenPhim}</p>
                       </div>
-                      <div className='moviesItem__btn mt-4 py-2 w-full rounded text-white bg-gradient-to-r from-indigo-500 to-purple-500 hover:from-indigo-700 hover:to-purple-700'>
+                      <div className='moviesItem__btn mt-4 py-2 w-full rounded text-white font-bold bg-gradient-to-r from-indigo-500 to-purple-500 hover:from-indigo-700 hover:to-purple-700'>
                         <a href='#'>CHI TIẾT</a>
                       </div>
                     </div>
